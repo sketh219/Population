@@ -95,7 +95,7 @@ public class Population {
 
 
 		
-		int input = Prompt.getInt("Enter Selection", 1, 9);
+		int input = Prompt.getInt("\n\nEnter Selection", 1, 9);
 		while(input!= 9)
 		{
 			if(input == 7 || input == 8)
@@ -158,7 +158,7 @@ public class Population {
 					String state = Prompt.getString("Enter State name (ie. Alabama) ");
 					while(notValidState(state))
 					{
-						System.out.println("ERROR: "+ state+" is not valid");
+						System.out.println("\nERROR: "+ state+" is not valid");
 						state = Prompt.getString("Enter State name (ie. Alabama) ");
 					}
 
@@ -181,7 +181,7 @@ public class Population {
 					String name = Prompt.getString("Enter city name");
 					while(notValidCity(name))
 					{
-						System.out.println("ERROR: "+ name+" is not valid");
+						System.out.println("\nERROR: "+ name+" is not valid");
 						name = Prompt.getString("Enter city name");
 
 					}
@@ -200,10 +200,11 @@ public class Population {
 
 			}
 			printMenu();
-			input = Prompt.getInt("Enter Selection", 1, 9);
+			
+			input = Prompt.getInt("\n\nEnter Selection", 1, 9);
 
 		}
-		System.out.println("Thanks for using population.");
+		System.out.println("\n\nThanks for using population.");
 
 
 	}
